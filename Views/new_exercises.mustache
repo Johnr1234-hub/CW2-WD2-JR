@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+{{>header}}
+</head>
+<body class="container">
+<h1>{{title}}<h1>
+<h2>Create an exercise plan</h2>
+
+<form method = "post" role="form">
+<div class ="form-group">
+<label for = "exercise">Exercise</label>
+<input type = "text" class="form-control" id="exercise"
+    name="exercise" placeholder="Exercise to be completed..">
+</div>
+<div class ="form-group">
+<label for = "requirement">Goal</label>
+<input type = "text" class="form-control" id="requirement"
+    name="requirement" placeholder="Goal to be met..">
+</div>
+<div class ="form-group">
+<label for = "FinishDate">Finish Date</label>
+<input type = "text" class="form-control" id="FinishDate"
+    name="FinishDate" placeholder="Date the exercise should be finished by..">
+</div>
+<div class ="form-group">
+<label for = "author">Author</label>
+<input type = "text" class="form-control" id="author"
+    name="author" placeholder="User's name..">
+</div>
+
+<div class = "form-group">
+    <input type = "submit" value="Create exercise plan" class="btn btn primary">
+</div>
+</form>
+</body>
+</html>

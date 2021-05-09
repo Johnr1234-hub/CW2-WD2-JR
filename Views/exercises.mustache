@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+{{>header}}
+</head>
+<body class = "container">
+ <h1>{{title}}</h1>
+ <div>
+ <button type= "button" onclick="location.href='/new_exercises'">
+ Enter a new exercise
+ </button>
+ </div>
+ <br>
+ {{#entries}}
+ <div>
+ Exercise : {{exercise}}
+ </div>
+ <div>
+ Goal : {{requirement}}
+ </div>
+ <div>
+ Finish date : {{FinishDate}}
+ </div>
+ <div>
+ Written by {{author}} , on {{published}}
+ </div>
+ <br>
+ <div>
+ <a href='/delete/{{_id}}'>Delete Exercise</a>  
+ </div>
+ <br>
+<hr>
+ {{/entries}}
+ {{^entries}}
+ No entries yet.
+ {{/entries}} 
+ </div>
+</body>
+</html>
