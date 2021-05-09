@@ -1,18 +1,12 @@
-# CW1-WD2
+# CW2-WD2
 coursework code for web design 2
 
-The following code will start a server that the user can comunicate with in the url, 
-it returns 3 results a landing page, the exercises page that show exercises to be completed and the delete page which serve to confirm the deletion of an exercise.
+the user will have to use npm install, mustache, nedb, express, body-parser, mustache-express
 
-the landing page performs a function that adds 2 database entries when the page loads to show the functionality that data can be added to the database on command.
+the code features a landing page with text and a button that will redirect the user to the exercises page, the landing page will also add 3 exercises by default to the database when the landing page is loaded.
 
-the exercise page performs a function that finds and returns all database entries and displays them on screen for the user to view in the browser.
+the exercises page displays all database entries and gives the user the choice to manually enter a new exercise or to delete an existing one.
 
-The delete page performs a function that will delete any entry with the exercise 'run' attached to it, 
-it displays a message on screen telling the user that the entry has been deleted.
-
-when the user returns to the exercise page there will only be one entry for 'lift weights' as the other exercise has been deleted.
-
-the code will also handle errors by displaying a 404 error message when a request cannot be returned.
+the create a exercise plan route will display a form for the user to complete and when the user fills in the information required and clicks the submit button under the form they will be redirected to the exercises page to view the existing list with the addition of a new exercise that they inserted.
 
 Code written by John Ralston
